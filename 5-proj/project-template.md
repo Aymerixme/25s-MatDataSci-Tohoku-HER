@@ -106,12 +106,20 @@ The accurate prediction of molecular properties from structural information is e
    
 # Introduction
 
-* Background and motivation of the Data Science question. The ``Why'' of the research
-* Explanation of your data
-  + Where is your data from
-  + What are the variables
-* What data would be necessary to improve your analysis?
-   
+Predicting molecular properties directly from structural information is a fundamental task in computational chemistry and materials science. Traditionally, this is achieved through quantum mechanical methods such as Density Functional Theory (DFT), which provide accurate predictions but are computationally expensive and limited in scalability. As the demand grows for rapid property evaluation in high-throughput screening and molecular design, data-driven alternatives have gained significant attention.
+
+
+
+Recent advances in machine learning, particularly neural networks, have opened new pathways for modeling the complex relationship between a molecule’s structure and its physicochemical properties. These models can learn from large datasets of precomputed molecular structures and properties to make fast, accurate predictions without relying on costly simulations.
+
+
+
+In this project, we focus on **predicting molecular properties from 3D molecular structures** using supervised learning with neural networks. We use the **DFT_all.npz** dataset, derived from DFT calculations and available through [Zenodo](https://zenodo.org/records/11164951), which contains atomic coordinates and quantum-level properties for a variety of small organic molecules.
+
+
+
+Our goal is to **train a neural network to accurately predict key molecular properties—such as total energy—from 3D atomic coordinates**, thereby capturing the structure–property relationship encoded in quantum mechanical simulations. This approach aims to demonstrate how machine learning models can serve as efficient surrogates for DFT, accelerating materials discovery and molecular design through predictive modeling.
+
 # Data Science Methods
 
 We decided to realize a Property prediction of the elements from their 3D molecular structure. We will use Supervising trqining on Neural Network. To do so we will use the 3D properties of the molecules as training inputs, then we will train the network with the use of the desired Property (Atomization Energy for example) as a label.
@@ -126,11 +134,42 @@ The main limit of this method is for each property we would lik to predict, we w
 
 ## Explanation of your data set
 
-* How many variables?
+* How many variables? 
+  - $784875$ data elements described by $26$caracteristics               
 * What are the data classes?
+  - compounds:dtype = array 
+  - atoms:dtype = array
+  - freqs:dtype = array
+  - vibmodes:dtype = array
+  - zpves:dtype = float64
+  - U0:dtype = float64
+  - U298:dtype = float64
+  - H:dtype = float64
+  - S:dtype = float64
+  - G:dtype = float64
+  - Cv:dtype = float64
+  - Cp:dtype = float64
+  - coordinates:dtype = array
+  - Vesp:dtype = array
+  - Qmulliken:dtype = array
+  - dipole:dtype = array
+  - quadrupole:dtype = array
+  - octupole: dtype = array
+  - hexadecapole:dtype = array
+  - rots:dtype = array
+  - gap:  dtype = float64
+  - Eee: dtype = float64
+  - Exc:dtype = float64
+  - Edisp: dtype = float64
+  - Etot:dtype = float64
+  - Eatomization:  dtype = float64
 * How many levels of factors for factor variables?
+  - atoms$\to$ level $10$.
+  - compounds$\to$ level $784837$.
 * Is your data suitable for a project analysis?
+  - Yes, we think. Sufficient variables are included in this dataset.
 * Write you databook, defining variables, units and structures
+ 
 
 ## Data Cleaning
 
