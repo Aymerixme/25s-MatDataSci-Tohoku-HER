@@ -83,6 +83,8 @@ For the updates:
 
 # Update 1
 
+We have decided to use the dataset QM24, we are able to manage its data and to print in 3D the center of the atoms composing the molecules.
+
 * Please put a bulleted list of things you have accomplished since the last update
   + Include things that didn't work but you tried
   + Things you are planning on doing
@@ -113,8 +115,11 @@ For the updates:
    
 # Data Science Methods
 
-* To be applied (such as image processing, time-series analysis, spectral analysis etc)
-* Define critical capabilities and identify packages you will draw upon
+We decided to realize a Property prediction of the elements from their 3D molecular structure. We will use Supervising trqining on Neural Network. To do so we will use the 3D properties of the molecules as training inputs, then we will train the network with the use of the desired Property (Atomization Energy for example) as a label.
+
+The input data should need no pretreatment. The output label should be a continous value defining the property of the element.
+
+The main limit of this method is for each property we would lik to predict, we would have to entirely redo the training with a different label.  
 
 # Exploratory Data Analysis
 
