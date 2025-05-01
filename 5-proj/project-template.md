@@ -119,6 +119,8 @@ We decided to realize a Property prediction of the elements from their 3D molecu
 
 The input data should need no pretreatment. The output label should be a continous value defining the property of the element.
 
+The dataset is composed of 784875 element wich is a quite huge amount of data (to compare, MNIST which is a basic digit recognition dataset contains 70000 elements) so the split between training subset and test subset should be relevant.
+
 The main limit of this method is for each property we would lik to predict, we would have to entirely redo the training with a different label.  
 
 # Exploratory Data Analysis
