@@ -102,8 +102,7 @@ We have decided to use the dataset QM24, we are able to manage its data and to p
 
 # Abstract
 
-* Summary of the nature, finding and meaning of your data analysis project. 
-* 1 paragraph written summary of your data analysis project
+The accurate prediction of molecular properties from structural information is essential for accelerating discovery in chemistry and materials science. While Density Functional Theory (DFT) provides reliable quantum mechanical predictions, its high computational cost limits its applicability in large-scale screening. In this study, we develop a neural network-based regression model to predict molecular properties—specifically total energy—directly from three-dimensional atomic coordinates. Using the DFT_all.npz dataset available from Zenodo, which contains a variety of DFT-computed properties for small organic molecules, we train the model in a supervised manner to learn the structure–property relationship. Our results demonstrate that neural networks can effectively approximate DFT-level accuracy while significantly reducing computation time. This work highlights the potential of machine learning as a scalable alternative to traditional quantum chemical simulations, enabling faster exploration of chemical space for materials and drug design.
    
 # Introduction
 
