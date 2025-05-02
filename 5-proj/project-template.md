@@ -169,7 +169,33 @@ The main limit of this method is for each property we would like to predict, we 
 * Is your data suitable for a project analysis?
   - Yes, we think. Sufficient variables are included in this dataset.
 * Write you databook, defining variables, units and structures
- 
+ |  variables   | units    | discreption |
+    |--------------|------------------|-----|
+    | compounds            |          |Stoichiometric formulas of the molecules
+    | atoms    |        |  Atomic numbers in the molecule  
+     |   freqs     |   $\text{cm}^{-1}$       |     Vibrational frequencies obtained from harmonic frequency analysis.    |
+    | vibmodes    |     $\r{A}$     |    Normal modes of vibration represented as displacement vectors.      |
+    | U0    |      Ha     |     Internal energy at 0 K     |
+    | U298    |       Ha      |    Internal energy at 298 K      |
+    | H    |           Ha     |     Enthalpy      |
+    | S    |                |     Entropy      |
+    | G    |            Ha    |     Gibbs free energy     |
+    | Cv    |               |    Heat capacity at constant volume      |
+    | Cp    |               |    Heat capacity at constant pressure       |
+    |  coordinates   |               |    coordinates (XYZ) of atoms in the molecule.      |
+    | Vesp    |                |     Electrostatic potential     | 
+    |  Qmulliken |             |     Mulliken atomic charges     | 
+    | dipole   |          a.u.     |    	Dipole moment       |
+    | quadrupole    |    a.u.      |     Quadrupole moment     |
+    | octupole    |       a.u.     |    	Octupole moment      |
+    | hexadecapole    |     a.u.      |     Hexadecapole moment     |
+    | rots    |              MHz     |     Rotational constants of the molecule.     |
+    | gaps    |              Ha     |     	HOMO-LUMO energy gap     |
+    |  Eee   |             Ha      |     Electron-electron repulsion energy     |
+    | Exc    |               Ha     |     Exchange-correlation energy     |
+    | Edisp    |            Ha      |    	Dispersion correction energy      |
+    | Etot    |               Ha    |    Total electronic energy      |
+    |   Eatomization  |      Ha     |     Atomization energy     | 
 
 ## Data Cleaning
 

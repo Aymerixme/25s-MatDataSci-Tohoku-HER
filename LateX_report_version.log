@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.3.24)  2 MAY 2025 11:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.3.24)  2 MAY 2025 12:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**5-proj/LateX_report_version.tex 5-proj/LateX_report_version.pdf
+**5-proj/LateX_report_version.tex -output-directory 5-proj/
 (./5-proj/LateX_report_version.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -411,7 +411,10 @@ cmr/m/n/10 , thereby cap-tur-ing the struc-ture{property
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Excluding 'comment' comment. [2] (./LateX_report_version.aux)
+
+LaTeX Warning: Command \r invalid in math mode on input line 140.
+
+[2] Excluding 'comment' comment. [3] (./LateX_report_version.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -420,24 +423,27 @@ Package rerunfilecheck Info: File `LateX_report_version.out' has not changed.
 (rerunfilecheck)             Checksum: DD736D8A6CFA6838541A7E0CA77FCF31;625.
  ) 
 Here is how much of TeX's memory you used:
- 10650 strings out of 475589
- 166822 string characters out of 5782860
- 1938975 words of memory out of 5000000
+ 10651 strings out of 475589
+ 166828 string characters out of 5782860
+ 1944975 words of memory out of 5000000
  32682 multiletter control sequences out of 15000+600000
  564059 words of font info for 57 fonts, out of 8000000 for 9000
  309 hyphenation exceptions out of 8191
- 75i,6n,79p,1150b,454s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,10n,79p,1144b,517s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr9.pfb>
-Output written on LateX_report_version.pdf (2 pages, 108979 bytes).
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy7.pfb>
+Output written on LateX_report_version.pdf (3 pages, 136290 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
+ 90 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
+ 8 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
