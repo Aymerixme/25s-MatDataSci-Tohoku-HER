@@ -102,7 +102,7 @@ We have decided to use the dataset QM24, we are able to manage its data and to p
 
 # Abstract
 
-The accurate prediction of molecular properties from structural information is essential for accelerating discovery in chemistry and materials science. While Density Functional Theory (DFT) provides reliable quantum mechanical predictions, its high computational cost limits its applicability in large-scale screening. In this study, we develop a neural network-based regression model to predict molecular properties—specifically total energy—directly from three-dimensional atomic coordinates. Using the DFT_all.npz dataset available from Zenodo, which contains a variety of DFT-computed properties for small organic molecules, we train the model in a supervised manner to learn the structure–property relationship. Our results demonstrate that neural networks can effectively approximate DFT-level accuracy while significantly reducing computation time. This work highlights the potential of machine learning as a scalable alternative to traditional quantum chemical simulations, enabling faster exploration of chemical space for materials and drug design.
+The accurate prediction of molecular properties from structural information is essential for accelerating discovery in chemistry and materials science. While Density Functional Theory (DFT) provides reliable quantum mechanical predictions, its high computational cost limits its applicability in large-scale screening. In this study, we develop a neural network-based regression model to predict molecular properties—specifically total energy—directly from three-dimensional atomic coordinates. Using the QM24 dataset available from Zenodo, which contains a variety of DFT-computed properties for small organic molecules, we train the model in a supervised manner to learn the structure–property relationship. Our results demonstrate that neural networks can effectively approximate DFT-level accuracy while significantly reducing computation time. This work highlights the potential of machine learning as a scalable alternative to traditional quantum chemical simulations, enabling faster exploration of chemical space for materials and drug design.
    
 # Introduction
 
@@ -114,7 +114,7 @@ Recent advances in machine learning, particularly neural networks, have opened n
 
 
 
-In this project, we focus on **predicting molecular properties from 3D molecular structures** using supervised learning with neural networks. We use the **DFT_all.npz** dataset, derived from DFT calculations and available through [Zenodo](https://zenodo.org/records/11164951), which contains atomic coordinates and quantum-level properties for a variety of small organic molecules.
+In this project, we focus on **predicting molecular properties from 3D molecular structures** using supervised learning with neural networks. We use the **QM24** dataset, derived from DFT calculations and available through [Zenodo](https://zenodo.org/records/11164951), which contains atomic coordinates and quantum-level properties for a variety of small organic molecules.
 
 
 
@@ -122,13 +122,13 @@ Our goal is to **train a neural network to accurately predict key molecular prop
 
 # Data Science Methods
 
-We decided to realize a Property prediction of the elements from their 3D molecular structure. We will use Supervising trqining on Neural Network. To do so we will use the 3D properties of the molecules as training inputs, then we will train the network with the use of the desired Property (Atomization Energy for example) as a label.
+We decided to realize a Property prediction of the elements from their 3D molecular structure. We will use Supervising training on Neural Network. To do so we will use the 3D properties of the molecules as training inputs, then we will train the network with the use of the desired Property (Atomization Energy for example) as a label.
 
-The input data should need no pretreatment. The output label should be a continous value defining the property of the element.
+The input data should need no pretreatment. The output label should be a continuous value defining the property of the element.
 
 The dataset is composed of 784875 element wich is a quite huge amount of data (to compare, MNIST which is a basic digit recognition dataset contains 70000 elements) so the split between training subset and test subset should be relevant.
 
-The main limit of this method is for each property we would lik to predict, we would have to entirely redo the training with a different label.  
+The main limit of this method is for each property we would like to predict, we would have to entirely redo the training with a different label.  
 
 # Exploratory Data Analysis
 
