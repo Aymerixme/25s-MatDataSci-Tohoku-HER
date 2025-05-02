@@ -169,7 +169,7 @@ The main limit of this method is for each property we would like to predict, we 
 * Is your data suitable for a project analysis?
   - Yes, we think. Sufficient variables are included in this dataset.
 * Write you databook, defining variables, units and structures
- |  variables   | units    | discreption |
+ -|  variables   | units    | discreption |
     |--------------|------------------|-----|
     | compounds            |          |Stoichiometric formulas of the molecules
     | atoms    |        |  Atomic numbers in the molecule  
