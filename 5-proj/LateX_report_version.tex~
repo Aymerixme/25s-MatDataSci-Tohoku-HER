@@ -16,14 +16,7 @@
 \usepackage{comment}
 
 \title{Deep Learning for Properties prediction based on 3D properties with }
-%\author{Yuto Tsuruta}
-\author{Aymeric Hernandez\\
-  \and
-  Chi Nay Hnin Htut\\
-  \and
-  Yuto Tsuruta
-}
-
+\author{You}
 
 \begin{document}
 \maketitle
