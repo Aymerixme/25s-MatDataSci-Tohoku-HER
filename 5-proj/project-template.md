@@ -75,7 +75,13 @@ For the updates:
 
 # Update 2
 
-We have
+* We have created little neural networks:
+  + Dense Neural Network
+  + Convolutional Neural Network
+
+* As we have been adviced during last class we are planning to:
+  + Search for another dataset to improve our work with more suitable data.
+  + Try to use Graph Neural Networks, very suitable for our work, the use of graph also fix the issue of data inconstant size.
 
 # Update 1
 
