@@ -1,6 +1,6 @@
 #--------------------------------------------------------------------------------
 #
-# This Script manipulates the data set QM24
+# This Script manipulates the data set QM24 with some basic manipulations
 #
 #--------------------------------------------------------------------------------
 

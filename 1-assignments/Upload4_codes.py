@@ -1,8 +1,12 @@
+#------------------------------------------------------------------------------------------------------------
+# This code is
+#
+
 import numpy as np
 from torch_geometric.data import Data
 from torch_geometric.nn import radius_graph
 from torch_geometric.loader import DataLoader
-from torch_geometric.nn import GCNConv, global_mean_pool
+from torch_geometric.nn import GCNConv, global_mean_pool, norm
 from torch.optim import Adam
 import torch
 import torch.nn.functional as F
@@ -16,7 +20,7 @@ def build_graph(Z, R, y):
     pos = torch.tensor(R, dtype=torch.float)
 
     y = torch.tensor(y, dtype=torch.float).reshape(1, -1)  # ✅ fix: ensures [1, 6] shape
-
+    # y = torch.nn.functional.normalize(y) # This is an attempt to normalize the input
     edge_index = radius_graph(pos, r=5.0, loop=False)
     return Data(x=x, pos=pos, edge_index=edge_index, y=y)
 
